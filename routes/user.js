@@ -6,7 +6,8 @@ router.get('/user', (req, res) => {
 });
 
 router.post('/user', (req, res) => {
-    console.log(req.body);
+    let userData = req.body;
+    console.log('Données utilisateur reçues :', userData);
     res.json({ "Messages": 'User created' });
 });
 
